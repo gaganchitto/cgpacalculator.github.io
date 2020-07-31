@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CGPA Calculator</title>
+	<link rel="ican" type="image/png" href="cg.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+	function cgpa(){
+		var mp,dp,elcp,engp,hsp,iwp;
+		var math=document.getElementById("maths").value;
+		math=math.toString();
+		math=math.toLowerCase();
+		var dsa=document.getElementById("dsa").value;
+		dsa=dsa.toString();
+		dsa=dsa.toLowerCase();
+		var iwt=document.getElementById("iwt").value;
+		iwt=iwt.toString();
+		iwt=iwt.toLowerCase();
+		var elect=document.getElementById("ect").value;
+		elect=elect.toString();
+		elect=elect.toLowerCase();
+		var eng=document.getElementById("eng").value;
+		eng=eng.toString();
+		eng=eng.toLowerCase();
+		var hst=document.getElementById("hst").value;
+		hst=hst.toString();
+		hst=hst.toLowerCase();
+		//document.getElementById("results").innerHTML=math;
+		var grade=["aa","ab","bb","bc","cc","cd","dd","fp"]
+		for (var i = 0; i <= grade.length-1; i++) {
+			if(i==0)
+			{
+				switch(math){
+					case grade[i]:
+						mp=10;
+						break;
+				}
+				switch(dsa){
+					case grade[i]:
+						dp=10;
+						break;
+				}
+				switch(iwt){
+					case grade[i]:
+						iwp=10;
+						break;
+				}
+				switch(eng){
+					case grade[i]:
+						engp=10;
+						break;
+				}
+				switch(elect){
+					case grade[i]:
+						elcp=10;
+						break;
+				}
+				switch(hst){
+					case grade[i]:
+						hsp=10;
+						break;
+				}
+				
+			}
+			else if(i==1)
+			{
+				switch(math){
+					case grade[i]:
+						mp=9;
+						break;
+				}
+				switch(dsa){
+					case grade[i]:
+						dp=9;
+						break;
+				}
+				switch(iwt){
+					case grade[i]:
+						iwp=9;
+						break;
+				}
+				switch(eng){
+					case grade[i]:
+						engp=9;
+						break;
+				}
+				switch(elect){
+					case grade[i]:
+						elcp=9;
+						break;
+				}
+				switch(hst){
+					case grade[i]:
+						hsp=9;
+						break;
+				}	
+			}
+			else if(i==2)
+			{
+				switch(math){
+					case grade[i]:
+						mp=8;
+						break;
+				}
+				switch(dsa){
+					case grade[i]:
+						dp=8;
+						break;
+				}
+				switch(iwt){
+					case grade[i]:
+						iwp=8;
+						break;
+				}
+				switch(eng){
+					case grade[i]:
+						engp=8;
+						break;
+				}
+				switch(elect){
+					case grade[i]:
+						elcp=8;
+						break;
+				}
+				switch(hst){
+					case grade[i]:
+						hsp=8;
+						break;
+				}
+			}
+			else if(i==3)
+			{
+				switch(math){
+					case grade[i]:
+						mp=7;
+						break;
+				}
+				switch(dsa){
+					case grade[i]:
+						dp=7;
+						break;
+				}
+				switch(iwt){
+					case grade[i]:
+						iwp=7;
+						break;
+				}
+				switch(eng){
+					case grade[i]:
+						engp=7;
+						break;
+				}
+				switch(elect){
+					case grade[i]:
+						elcp=7;
+						break;
+				}
+				switch(hst){
+					case grade[i]:
+						hsp=7;
+						break;
+				}
+			}
+			else if(i==4)
+			{
+				switch(math){
+					case grade[i]:
+						mp=6;
+						break;
+				}
+				switch(dsa){
+					case grade[i]:
+						dp=6;
+						break;
+				}
+				switch(iwt){
+					case grade[i]:
+						iwp=6;
+						break;
+				}
+				switch(eng){
+					case grade[i]:
+						engp=6;
+						break;
+				}
+				switch(elect){
+					case grade[i]:
+						elcp=6;
+						break;
+				}
+				switch(hst){
+					case grade[i]:
+						hsp=6;
+						break;
+				}
+			}
+			else if(i==5)
+			{
+				switch(math){
+					case grade[i]:
+						mp=5;
+						break;
+				}
+				switch(dsa){
+					case grade[i]:
+						dp=5;
+						break;
+				}
+				switch(iwt){
+					case grade[i]:
+						iwp=5;
+						break;
+				}
+				switch(eng){
+					case grade[i]:
+						engp=5;
+						break;
+				}
+				switch(elect){
+					case grade[i]:
+						elcp=5;
+						break;
+				}
+				switch(hst){
+					case grade[i]:
+						hsp=5;
+						break;
+				}
+			}
+			else if(i==6)
+			{
+				switch(math){
+					case grade[i]:
+						mp=4;
+						break;
+				}
+				switch(dsa){
+					case grade[i]:
+						dp=4;
+						break;
+				}
+				switch(iwt){
+					case grade[i]:
+						iwp=4;
+						break;
+				}
+				switch(eng){
+					case grade[i]:
+						engp=4;
+						break;
+				}
+				switch(elect){
+					case grade[i]:
+						elcp=4;
+						break;
+				}
+				switch(hst){
+					case grade[i]:
+						hsp=4;
+						break;
+				}
+			}
+			else if(i==7)
+			{
+				switch(math){
+					case grade[i]:
+						mp=0;
+						break;
+				}
+				switch(dsa){
+					case grade[i]:
+						dp=0;
+						break;
+				}
+				switch(iwt){
+					case grade[i]:
+						iwp=0;
+						break;
+				}
+				switch(eng){
+					case grade[i]:
+						engp=0;
+						break;
+				}
+				switch(elect){
+					case grade[i]:
+						elcp=0;
+						break;
+				}
+				switch(hst){
+					case grade[i]:
+						hsp=0;
+						break;
+				}
+			}
+			else{
+				alert("Enter Valid Grade")
+			}
+		}
+		var y=(hsp*1)+(engp*2)+(elcp*3)+(iwp*3)+(dp*3)+(mp*3);
+		var x=y/15;
+		alert("Your CGPA is "+x.toFixed(2));
+}
+
+</script>
+</head>
+<style type="text/css">
+	body{
+		font-family: 'Baloo Bhai', cursive;
+		margin: 0;
+		padding: 0;
+		background-color: black;
+		color: white;
+	}
+	.heading{
+		color: red;
+		margin: 20px auto;
+		text-align: center;
+		font-size: 2.5vw;
+	}
+	.content{
+		border: 6px solid white;
+		text-align: center;
+		display: inline-block;
+		border-radius: 8px;
+		max-width:900px;
+	}
+	.content h2{
+		font-size: 30px;
+		text-decoration: underline;
+	}
+	table{
+		font-size: 25px;
+	}
+	input{
+		padding: 10px;
+		border-radius: 5px;
+	}
+	.btn{
+		padding:10px 20px;
+		margin: 17px auto; 
+		border-radius: 5px;
+		font-family: 'Baloo Bhai', cursive; 
+		background-color: black;
+		color: white
+	}
+	.btn:hover{
+		background-color: grey;
+
+	}
+	.results{
+		margin-top: 20px;
+		display: ;
+	}
+	.results h2{
+		font-family: 'Baloo Bhai', cursive; 
+		font-size: 30px;
+	}
+	form{
+		font-family: 'Baloo Bhai', cursive; 
+		font-size: 25px;
+	}
+</style>
+<body>
+	<center>	
+	<div style="max-width: 900px;">
+		<center>
+		<div class="heading">
+			<h1>Cgpa Calculator</h1>
+		</div>
+		<div class="content">
+			<h2>Enter your Grades</h2>
+			<br>
+			<form>
+				<div style="max-width: 900px;">
+				<div style="float:left; margin-left: 20px">
+					<label for="maths">Maths :</label><br>
+					<label for="dsa">DSA :</label><br>
+					<label for="iwt">IWT :</label><br>
+					<label for="ect">Electronics :</label><br>
+					<label for="eng">English :</label><br>
+					<label for="hst">Health Safety :</label><br>
+
+				</div>
+				<div style="float: right; margin-right: 20px">
+					<input id="maths" type="text" placeholder="Enter Grade"><br>
+					<input id="dsa" type="text" placeholder="Enter Grade"><br>
+					<input id="iwt" type="text" placeholder="Enter Grade"><br>
+					<input id="ect" type="text" placeholder="Enter Grade"><br>
+					<input id="eng" type="text" placeholder="Enter Grade"><br>
+					<input id="hst" type="text" placeholder="Enter Grade"><br>	
+
+				</div>
+			<!--
+			<label for="maths">Maths :</label>
+				<input id="maths" type="text" placeholder="Enter Grade"><br>
+				
+				<label for="dsa">DSA :</label>
+				<input id="dsa" type="text" placeholder="Enter Grade"><br>
+
+				<label for="iwt">IWT :</label>
+				<input id="iwt" type="text" placeholder="Enter Grade"><br>
+
+				<label for="ect">Electronics :</label>
+				<input id="ect" type="text" placeholder="Enter Grade"><br>
+
+				<label for="eng">English :</label>
+				<input id="eng" type="text" placeholder="Enter Grade"><br>
+
+				<label for="hst">Health Safety :</label>
+				<input id="hst" type="text" placeholder="Enter Grade"><br>	
+			-->
+			<div>
+			<button class="btn" type="submit" onclick="cgpa()">Show CGPA</button>
+			</div>
+		</div>
+			</form>
+		</div>
+		<div class="results">
+			<p id="result"></p>
+		</div>
+	</center>
+	</div>
+</center>
+</body>
+
+
+
+</html>
