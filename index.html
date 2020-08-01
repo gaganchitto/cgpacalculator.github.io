@@ -371,10 +371,61 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.background{
+		color: red;
+		opacity: 0;
+		z-index: -1;
+		position: relative;
+		text-align: center;
+		animation-name: welcome;
+		animation-duration: 5s;
+		animation-iteration-count: 1;
+		animation-fill-mode: alternate;	
+	}
+	.whole{
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		animation-name: show;
+		animation-duration: 8s;
+		animation-iteration-count: 1;
+		animation-fill-mode: alternate;	
+	}
+	@keyframes welcome{
+		0%{
+			top: 70rem;
+			opacity: 0.3;
+		}
+		50%{
+			top: 30rem;
+			opacity: 1;
+		}
+		100%{
+			top: 0px;
+			opacity: 0;
+		}
+	}
+	@keyframes show{
+		0%{
+			opacity: 0;
+		}
+		50%{
+			opacity: 0;
+		}
+		75%{
+			opacity: 1;
+		}
+	}
+
 </style>
 <body>
-	<center>	
-	<div style="max-width: 900px;">
+	<center>
+	<div class="background">
+		<h1>Welcome to CGPA Calculator</h1>
+	</div>
+	<div class="whole" style="max-width: 900px;">
 		<center>
 		<div class="heading">
 			<h1>Cgpa Calculator</h1>
@@ -403,25 +454,6 @@
 						<input id="hst" type="text" placeholder="Enter Grade" class="col-sm-12 col-xs-12"><br>	<br>
 
 					</div>
-				<!--
-				<label for="maths">Maths :</label>
-					<input id="maths" type="text" placeholder="Enter Grade"><br>
-					
-					<label for="dsa">DSA :</label>
-					<input id="dsa" type="text" placeholder="Enter Grade"><br>
-
-					<label for="iwt">IWT :</label>
-					<input id="iwt" type="text" placeholder="Enter Grade"><br>
-
-					<label for="ect">Electronics :</label>
-					<input id="ect" type="text" placeholder="Enter Grade"><br>
-
-					<label for="eng">English :</label>
-					<input id="eng" type="text" placeholder="Enter Grade"><br>
-
-					<label for="hst">Health Safety :</label>
-					<input id="hst" type="text" placeholder="Enter Grade"><br>	
-				-->
 				
 				<div style="align-self: center;">
 				<button class="btn" type="submit" onclick="cgpa()">Show CGPA</button>
